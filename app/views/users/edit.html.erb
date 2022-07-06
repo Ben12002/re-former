@@ -1,0 +1,11 @@
+<!-- Won't show unless you also implement the update action, because the form submits to the update route> -->
+<%= form_with model: @user do |form| %>
+    <%= form.label :email, "Email" %>
+    <%= form.email_field :email, placeholder: "example@example.com" %>
+    <%= form.label :username, "Username" %>
+    <%= form.text_field :username %>
+    <%= form.label :password, "Password" %>
+    <%= form.password_field :password%>
+    <%= form.submit %>
+<% end %>
+
